@@ -20,6 +20,7 @@ import {FooterComponent} from "./layout/footer/footer.component";
 import {Ng2BootstrapModule} from "ngx-bootstrap";
 import {NgDashboardModule} from "ngx-dashboard";
 import {ShopComponent} from "./pages/shop/shop.component";
+import {ChatComponent} from "./pages/chat/chat.component";
 import {NotificationComponent} from "./pages/notification/notification.component";
 import {WidgetLISAComponent} from "./components/widget/widget.component";
 import {VboxComponent} from "./components/widget/vbox/vbox.component";
@@ -64,6 +65,7 @@ import {FieldComponent} from "./components/forms/field.component";
     ProfileComponent,
     PageNotFoundComponent,
     ShopComponent,
+    ChatComponent,
     NotificationComponent,
     WidgetLISAComponent,
     VboxComponent,

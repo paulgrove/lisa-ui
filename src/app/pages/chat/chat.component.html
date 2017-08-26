@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="chatlog">
+				<li *ngFor="let log of chatLogs">
+					<span class="badge"></span>
+					<div class="chatlog-text" [ngClass]="{'chatlog-text-right': log.sent == true}">
+						{{log.text}}
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="input-group">
+				<input (keyup.enter)="send($event)" [(ngModel)]="inputText" type="text" class="form-control" placeholder="Type here to chat to LISA" aria-label="Chat...">
+				<span class="input-group-btn">
+					<button (click)="send($event)" class="btn btn-secondary" type="button">Send</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>

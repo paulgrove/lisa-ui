@@ -30,6 +30,9 @@
         <li routerLink="/shop" routerLinkActive="active" (click)="isMenuCollapsed = true">
           <a class="pointer" i18n="Menu shop|Shop menu label@@shopMenu">Shop</a>
         </li>
+        <li routerLink="/chat" routerLinkActive="active" (click)="isMenuCollapsed = true">
+          <a class="pointer" i18n="Menu shop|Chat menu label@@chatMenu">Chat</a>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li (click)="toggleSpeech()" [ngClass]="{active: _speechService.isListening}">

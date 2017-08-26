@@ -8,6 +8,7 @@ import {SettingsComponent} from "./pages/settings/settings.component";
 import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.component";
 import {ProfileComponent} from "./pages/profile/profile.component";
 import {ShopComponent} from "./pages/shop/shop.component";
+import {ChatComponent} from "./pages/chat/chat.component";
 import {NotificationComponent} from "./pages/notification/notification.component";
 import {AuthGuard} from "./common/auth.guard";
 
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   {path: 'plugins', component: PluginsComponent, canActivate: [AuthGuard]},
   {path: 'scenes', component: ScenesComponent, canActivate: [AuthGuard]},
   {path: 'shop', component: ShopComponent, canActivate: [AuthGuard]},
+  {path: 'chat', component: ChatComponent, canActivate: [AuthGuard]},
   {path: 'settings', component: SettingsComponent, canActivate: [AuthGuard]},
   {path: 'notifications', component: NotificationComponent, canActivate: [AuthGuard]},
   {path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
